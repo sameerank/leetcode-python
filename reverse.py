@@ -6,6 +6,7 @@ class Solution(object):
         """
         x_stringified = str(x)
         if x_stringified[0] == '-':
-            return int('-' + x_stringified[1::][::-1])
+            res = int('-' + x_stringified[1::][::-1])
         else:
-            return int(x_stringified[0::][::-1])
+            res = int(x_stringified[::-1])
+        return 0 if abs(res) > 2147483650 else res
