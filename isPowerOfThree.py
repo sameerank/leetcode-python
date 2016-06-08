@@ -11,3 +11,15 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
+
+import unittest
+
+sol = Solution()
+
+class TestIsPowerOfThree(unittest.TestCase):
+
+    def test_example(self):
+        self.assertEqual(sol.isPowerOfThree(9), True)
+
+if __name__ == '__main__':
+    unittest.main()
