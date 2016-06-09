@@ -18,7 +18,13 @@ sol = Solution()
 
 class TestIsPowerOfThree(unittest.TestCase):
 
-    def test_example(self):
+    def test_three(self):
+        self.assertEqual(sol.isPowerOfThree(3), True)
+
+    def test_four(self):
+        self.assertEqual(sol.isPowerOfThree(4), False)
+
+    def test_nine(self):
         self.assertEqual(sol.isPowerOfThree(9), True)
 
 if __name__ == '__main__':
