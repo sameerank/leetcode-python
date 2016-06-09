@@ -27,5 +27,8 @@ class TestIsPowerOfThree(unittest.TestCase):
     def test_nine(self):
         self.assertEqual(sol.isPowerOfThree(9), True)
 
+    def test_eighteen(self):
+        self.assertEqual(sol.isPowerOfThree(18), False)
+
 if __name__ == '__main__':
     unittest.main()
