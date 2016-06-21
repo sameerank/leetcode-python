@@ -20,5 +20,8 @@ class TestIntersection(unittest.TestCase):
     def test_one_intersection(self):
         self.assertEqual(sol.intersection([1, 2], [2, 3]), [2])
 
+    def test_two_intersection(self):
+        self.assertEqual(sol.intersection([1, 2, 3], [2, 3, 4]), [2, 3])
+
 if __name__ == '__main__':
     unittest.main()
