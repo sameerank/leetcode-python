@@ -19,3 +19,14 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
+import unittest
+
+sol = Solution()
+
+class TestIntersect(unittest.TestCase):
+
+    def test_example(self):
+        self.assertEqual(sol.intersect([1, 2, 2, 1], [2, 2]), [2, 2])
+
+if __name__ == '__main__':
+    unittest.main()
