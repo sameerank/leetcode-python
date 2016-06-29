@@ -18,9 +18,12 @@ sol = Solution()
 class TestReverse(unittest.TestCase):
 
     def test_example_one(self):
-        self.assertEqual(sol.reverse(123), 321)
+        self.assertEqual(sol.reverse(1), 1)
 
     def test_example_two(self):
+        self.assertEqual(sol.reverse(123), 321)
+
+    def test_example_three(self):
         self.assertEqual(sol.reverse(-123), -321)
 
 if __name__ == '__main__':
